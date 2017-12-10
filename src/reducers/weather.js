@@ -1,15 +1,17 @@
 import Immutable from 'seamless-immutable';
 
-import api from '../actionTypes/api';
+import api from '../actionTypes/weather';
 
 const INITIAL_STATE = Immutable.from({
-  weatherForCity: null,
+  city: null,
+  weatherData: null,
+  cityValid: false,
 });
 
 const weather = (state = INITIAL_STATE, action) => {
   switch (action.type) {
     case api.FETCH_WEATHER_FOR_CITY_SUCCESS:
-      return state.set('weatherForCity', action.payload);
+      return state.set('weatherData', action.payload);
     default:
       return state;
   }

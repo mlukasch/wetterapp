@@ -1,7 +1,7 @@
 import keymirror from 'keymirror';
 
 const weather = {
-  FETCH_WEATHER_FOR_CITY: null,
+  ON_CHANGE_CITY: null,
   FETCH_WEATHER_FOR_CITY_SUCCESS: null,
   FETCH_WEATHER_FOR_CITY_FAILED: null,
 };

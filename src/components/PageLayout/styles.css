@@ -1,9 +1,11 @@
-#page-layout-header, .navbar-brand, .nav {
-    font-family: 'Pacifico',
-    cursive;
-    font-size: 40px;
-    height: 100px;
-    align-items: center;
+#page-layout {
+    flex-direction: column;
+    min-height: 100vh;
     display: flex;
-    color: white;
+    background-color: #3498db;
+}
+
+#page-layout-content {
+    background-color: yellow;
+    flex: 1;
 }

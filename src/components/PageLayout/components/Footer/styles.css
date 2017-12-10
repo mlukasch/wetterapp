@@ -1,0 +1,15 @@
+#page-footer {
+    height: 100px;
+    background-color: #34495e;
+    width: 100%;
+    justify-self: flex-end;
+    align-self: flex-end;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
+#page-footer-links {
+    display: flex;
+    justify-content: center;
+}
