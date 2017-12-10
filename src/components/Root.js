@@ -2,13 +2,13 @@ import React, { Component } from 'react';
 import { Provider } from 'react-redux';
 
 import store from '../store';
-import Router from '../components/Router';
+import AppRouter from './AppRouter';
 
 class Root extends Component {
   render() {
     return (
       <Provider store={store}>
-        <Router/>
+        <AppRouter />
       </Provider>
     );
   }
