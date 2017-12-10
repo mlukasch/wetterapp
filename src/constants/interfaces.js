@@ -13,3 +13,10 @@ export const WeatherInterface = PropTypes.shape({
     name: PropTypes.string,
   }),
 });
+
+
+export const WeatherDefault = {
+  weatherData: [],
+  weather: [],
+  name: null,
+};

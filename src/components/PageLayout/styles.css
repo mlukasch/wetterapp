@@ -6,6 +6,8 @@
 }
 
 #page-layout-content {
-    background-color: yellow;
+    background-color: white;
     flex: 1;
+    margin-top: 20px;
+    margin-bottom: 20px;
 }
