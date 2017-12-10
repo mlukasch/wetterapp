@@ -3,7 +3,7 @@ import { createLogger } from 'redux-logger';
 
 import rootReducer from '../reducers';
 
-const logger = createLogger({diff: true});
+const logger = createLogger({ diff: true });
 
 const middlewares = [logger];
 
