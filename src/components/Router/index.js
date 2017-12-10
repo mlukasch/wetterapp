@@ -3,8 +3,8 @@ import React, { Component } from 'react';
 import connect from './connector';
 
 const Test = (props) => (<div>
-  {props.test.data}
-  <button type="button" onClick={() => props.actions.test()}>Test</button>
+  {props.weather.weatherForCity}
+  <button type="button" onClick={() => props.fetchWeatherForCity({city: 'Köln'})}>Test</button>
 </div>);
 
 export default connect(Test);

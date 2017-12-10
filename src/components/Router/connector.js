@@ -1,16 +1,15 @@
-import { bindActionCreators } from 'redux';
 import { connect } from 'react-redux';
 
-import testActions from '../../actions/test';
+import * as api from '../../actions/api';
 
-import selectTest from '../../selectors/test';
+import selectWeather from '../../selectors/weather';
 
 const mapStateToProps = state => ({
-  test: selectTest(state),
+  weather: selectWeather(state),
 });
 
-const mapDispatchToProps = dispatch => ({
-  actions: bindActionCreators(testActions, dispatch),
+const mapDispatchToProps = ({
+  fetchWeatherForCity: api.fetchWeatherForCity,
 });
 
 export default connect(mapStateToProps, mapDispatchToProps);
