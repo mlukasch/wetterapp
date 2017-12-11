@@ -1,9 +1,5 @@
-You need an API Key for using https://api.openweathermap.org
+Uses https://api.openweathermap.org 
 
-Create the following file: `./secrets/index.js` with the content:
+Just run `npm i` and `npm run start`
 
-`export const API_KEY = <YOUR API KEY>`
-`export const AUTHOR_NAME = '...';`
-`export const AUTHOR_ADDRESS = '....';`
-`export const AUTHOR_MAIL = '...';`
-`export const AUTHOR_PHONE = '...';`
+Will be served by default from http://localhost:3000 as any other create-react-app
