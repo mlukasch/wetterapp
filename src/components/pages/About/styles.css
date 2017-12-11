@@ -1,3 +1,9 @@
 #page-about {
-    background-color: red;
+    display: flex;
+    justify-content: center;
+    padding: 30px;
+}
+
+#page-about-info {
+    font-size: 20px;
 }

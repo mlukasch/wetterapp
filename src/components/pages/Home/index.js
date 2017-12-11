@@ -4,7 +4,7 @@ import PropTypes from 'proptypes';
 
 import connect from './connector';
 import './styles.css';
-import { WeatherInterface, WeatherDefault } from '../../../constants/interfaces';
+import { WeatherInterface } from '../../../constants/interfaces';
 import WeatherTable from './components/WeatherTable';
 
 class Home extends Component {
@@ -25,7 +25,7 @@ class Home extends Component {
         </form>
         <Grid>
           <Row>
-            <Col>
+            <Col xs={12}>
               {weatherData ? (<WeatherTable
                 temp={weatherData.main.temp}
                 humidity={weatherData.main.humidity}

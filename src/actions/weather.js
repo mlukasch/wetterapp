@@ -1,9 +1,9 @@
-import { showSnack, dismissSnack } from 'react-redux-snackbar';
+import { showSnack } from 'react-redux-snackbar';
 
 import actionTypes from '../actionTypes/weather';
 import * as weatherApi from '../api/weather';
 
-export const onChangeCity = ({ city }) => (dispatch, getState) => {
+export const onChangeCity = ({ city }) => (dispatch) => {
   console.log('fetchWeatherForCity');
   dispatch({
     type: actionTypes.ON_CHANGE_CITY,

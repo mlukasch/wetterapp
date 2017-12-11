@@ -1,24 +1,24 @@
 import React, { Component } from 'react';
-import { Navbar, NavItem, Nav } from 'react-bootstrap';
+import { Navbar, Nav, NavItem } from 'react-bootstrap';
 import { NavLink } from 'react-router-dom';
 import './styles.css';
 
 class PageHeader extends Component {
   render() {
     return (
-      <Navbar inverse collapseOnSelect id="page-header">
+      <Navbar inverse id="page-header">
         <Navbar.Header>
           <Navbar.Brand>
             <NavLink to="/">
-              <i className="fa fa-umbrella" aria-hidden="true" />&nbsp;
-                Weather App
+              <i className="fa fa-umbrella" aria-hidden="true"/>&nbsp;
+              Weather App
             </NavLink>
           </Navbar.Brand>
-          <Navbar.Toggle />
+          <Navbar.Toggle/>
         </Navbar.Header>
         <Navbar.Collapse>
           <Nav pullRight>
-            <NavItem eventKey={2} href="/about">About</NavItem>
+            <NavItem href="/about" eventKey={1}>About</NavItem>
           </Nav>
         </Navbar.Collapse>
       </Navbar>

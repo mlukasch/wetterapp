@@ -11,7 +11,7 @@ class PageFooter extends Component {
           <Grid>
             <Row>
               <Col id="page-footer-links">
-                <Button bsSize="lg">
+                <Button bsSize="lg" href="/about">
                   <i className="fa fa-copyright" aria-hidden="true"></i>&nbsp;
                   Impressum
                 </Button>
